@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Rapida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#" class="logo"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link ">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="acerca.html" class="nav-link ">Acerca de nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link ">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="platillos.html" class="nav-link ">Comida del dia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link "></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="h2-sub">
+                <span class="fil">B</span>ienvenido a
+            </h2>
+            <h1 class="head"> FAST FOOD</h1>
+            <div class="he-des">
+                <h5></h5>
+                <a href="nosotros.html" class="btn cta-btn">Comienza tu experiencia</a>
+            </div>
+        </div>
+    </section>
+
+   
+    </section>
+
+
+   
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                   
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="numero"><i class="fab fa-whatsapp-square"></i></a>
+                            <h1>241-110-69-76</h1>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <h1>FAST FOOD</h1>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <h1>FAST_FOOD@comida Rapida</h1>
+                            </li>
+                            
+                               
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Registrate </h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input"
+                            placeholder="Escribe tu email"
+                            >
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+    
+</body>
+</html>
